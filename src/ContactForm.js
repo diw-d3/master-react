@@ -16,7 +16,7 @@ class ContactForm extends React.Component {
   isValidForm = () => {
     let isValid = true;
 
-    if (!RegExp('^[a-z0-9-_]+@[a-z0-9-_]+\\.[a-z]+$').test(this.state.email)) {
+    if (!RegExp('^[a-z0-9-_.]+@[a-z0-9-_]+\\.[a-z]+$').test(this.state.email)) {
       isValid = false;
     }
 
